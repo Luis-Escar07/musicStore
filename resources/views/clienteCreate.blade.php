@@ -14,7 +14,7 @@
             <label for="nombre">
                 Nombre:
                 <br>
-                <input type="text" name="nombre" placeholder="Nombre(s)">
+                <input type="text" name="nombre" placeholder="Nombre(s)" value="{{ old('nombre') }}">
 
                 @error('nombre')
                     <i>{{ $message }}</i>
@@ -26,7 +26,7 @@
             <label for="apellidos">
                 Apellidos:
                 <br>
-                <input type="text" name="apellidos" placeholder="Apellidos">
+                <input type="text" name="apellidos" placeholder="Apellidos" value="{{ old('apellidos') }}">
 
                 @error('apellidos')
                     <i>{{ $message }}</i>
@@ -38,7 +38,7 @@
             <label for="correo">
                 Correo:
                 <br>
-                <input type="text" name="correo" placeholder="Correo electronico">
+                <input type="text" name="correo" placeholder="Correo electronico" value="{{ old('correo') }}">
 
                 @error('correo')
                     <i>{{ $message }}</i>
@@ -50,7 +50,7 @@
             <label for="calle_ext">
                 Dirección 1:
                 <br>
-                <input type="text" name="calle_ext" placeholder="Calle y número de casa">
+                <input type="text" name="calle_ext" placeholder="Calle y número de casa" value="{{ old('calle_ext') }}">
 
                 @error('calle_ext')
                     <i>{{ $message }}</i>
@@ -62,7 +62,7 @@
             <label for="interior">
                 Dirección 2:
                 <br>
-                <input type="text" name="interior" placeholder="Apartamento, local, etc.">
+                <input type="text" name="interior" placeholder="Apartamento, local, etc." value="{{ old('interior') }}">
 
                 @error('interior')
                     <i>{{ $message }}</i>
@@ -74,7 +74,7 @@
             <label for="cod_postal">
                 Código postal:
                 <br>
-                <input type="text" name="cod_postal" placeholder="Código postal">
+                <input type="text" name="cod_postal" placeholder="Código postal" value="{{ old('cod_postal') }}">
 
                 @error('cod_postal')
                     <i>{{ $message }}</i>
@@ -86,7 +86,7 @@
             <label for="ciudad">
                 Ciudad:
                 <br>
-                <input type="text" name="ciudad" placeholder="Ciudad">
+                <input type="text" name="ciudad" placeholder="Ciudad" value="{{ old('ciudad') }}">
 
                 @error('ciudad')
                     <i>{{ $message }}</i>
@@ -98,7 +98,7 @@
             <label for="estado">
                 Estado:
                 <br>
-                <input type="text" name="estado" placeholder="Estado">
+                <input type="text" name="estado" placeholder="Estado" value="{{ old('estado') }}">
 
                 @error('estado')
                     <i>{{ $message }}</i>
@@ -110,7 +110,7 @@
             <label for="telefono">
                 Teléfono:
                 <br>
-                <input type="text" name="telefono" placeholder="Teléfono">
+                <input type="text" name="telefono" placeholder="Teléfono" value="{{ old('telefono') }}">
 
                 @error('telefono')
                     <i>{{ $message }}</i>
