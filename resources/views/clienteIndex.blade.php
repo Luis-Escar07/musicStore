@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Cliente Index</title>
+        @vite(['resources/css/materialize.css', 'resources/js/materialize.js'])
     </head>
 
-    <body>
+    <body class="container">
 
         <h1>Información de los clientes</h1>
         
-        <table border>
+        <table class="responsive-table">
             <tr>
                 <th>ID</th>
                 <th>Nombre(s)</th>

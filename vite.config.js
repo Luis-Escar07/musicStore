@@ -6,7 +6,9 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css',
+                'resources/css/materialize.css',
                 'resources/js/app.js',
+                'resources/js/materialize.js',
             ],
             refresh: [
                 ...refreshPaths,
