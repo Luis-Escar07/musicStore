@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cliente Show</title>
-        @vite(['resources/css/materialize.css', 'resources/js/materialize.js'])
-    </head>
-
-    <body class="container">
-
+<x-template titulo="Información del cliente">
         <ul class="collection with-header">
-            <li class="collection-header"><h4>Información de un cliente en especifico</h4></li>
 
             <li class="collection-item">
                 <span class="blue-text text-darken-2">Nombre:</span> 
@@ -55,6 +45,4 @@
                 <span class="blue-text text-darken-2">Teléfono:</span>
                 {{ $cliente->telefono }}</li>
         </ul>
-
-    </body>
-</html>
+</x-template>

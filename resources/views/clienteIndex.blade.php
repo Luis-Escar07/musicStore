@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cliente Index</title>
-        @vite(['resources/css/materialize.css', 'resources/js/materialize.js'])
-    </head>
-
-    <body class="container">
-
-        <h1>Información de los clientes</h1>
+<x-template titulo="Información de los clientes">
         
         <table class="responsive-table">
             <tr>
@@ -52,6 +42,4 @@
                 </tr>
             @endforeach
         </table>
-
-    </body>
-</html>
+</x-template>

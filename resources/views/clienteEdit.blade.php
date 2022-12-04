@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/contacto.css">
-        <title>Clientes Form</title>
-        @vite(['resources/css/materialize.css', 'resources/js/materialize.js'])
-    </head>
-    <body class="container">
-        <h1>Ingresa tu información</h1>
-
+<x-template titulo="Información la información">
         <form action="/cliente/{{ $cliente->id }}" method="POST" class="col s12">
             @csrf
             @method('patch')
@@ -89,5 +79,4 @@
                 Enviar
             </button>
         </form>
-    </body>
-</html>
+</x-template>
