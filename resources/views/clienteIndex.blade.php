@@ -3,6 +3,7 @@
         <table class="responsive-table">
             <tr>
                 <th>ID</th>
+                <th>Id_Usuario</th>
                 <th>Nombre(s)</th>
                 <th>Apellidos</th>
                 <th>Correo</th>
@@ -18,6 +19,7 @@
             @foreach($clientes as $cliente)
                 <tr>
                     <td>{{ $cliente->id }}</td>
+                    <td>{{ $cliente->user->id }}</td>
                     <td>
                         <a href="/cliente/{{ $cliente->id }}">
                             {{ $cliente->nombre }}

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cliente;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth; 
 
 class ClienteController extends Controller
 {
@@ -14,7 +15,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        $clientes = Cliente::all();
+        //$clientes = Cliente::all();
+        $clientes = Auth::user()->clientes;
         return view('/clienteIndex', compact('clientes'));
     }
 
@@ -47,6 +49,7 @@ class ClienteController extends Controller
             'telefono' => ['required'],
         ]);
 
+        $request->merge(['user_id' => Auth::id()]);
         Cliente::create($request->all());
 
         return redirect('/cliente/create');
