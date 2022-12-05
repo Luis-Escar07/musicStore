@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/landingpage', [SitioController::class, 'landingpage']);
 
-Route::resource('cliente', ClienteController::class);
+Route::resource('cliente', ClienteController::class);/*->middleware('auth')*/
 
 Route::get('/landing', function () {
     return view('landing');
