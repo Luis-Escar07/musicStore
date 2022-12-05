@@ -15,9 +15,13 @@ use App\Http\Controllers\ClienteController;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Route::get('/', [SitioController::class, 'landingpage']);
 
 Route::get('/landingpage', [SitioController::class, 'landingpage']);
 
