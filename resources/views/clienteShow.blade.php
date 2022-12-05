@@ -2,6 +2,11 @@
         <ul class="collection with-header">
 
             <li class="collection-item">
+                <span class="blue-text text-darken-2">Id_Usuario:</span> 
+                {{ $cliente->user->id }}
+            </li>
+
+            <li class="collection-item">
                 <span class="blue-text text-darken-2">Nombre:</span> 
                 {{ $cliente->nombre }}
             </li>

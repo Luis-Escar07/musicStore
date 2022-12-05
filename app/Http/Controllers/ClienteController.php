@@ -70,7 +70,8 @@ class ClienteController extends Controller
      */
     public function show(Cliente $cliente)
     {
-        return view('/clienteShow', compact('cliente'));
+        $clientes = Auth::user()->clientes;
+        return view('/clienteShow', compact('cliente', 'clientes'));
     }
 
     /**
